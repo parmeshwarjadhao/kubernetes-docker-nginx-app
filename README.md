@@ -1,19 +1,14 @@
 # k8s-docker-nginx-static-html-demo
 
-## Must read
+This repo contains the code for an static html demo page behind nginx deployed on local kubernetes cluster.
 
 Here is a quick [link](https://medium.com/containermind/a-beginners-guide-to-kubernetes-7e8ca56420b6) that explains the various aspects within kubernetes.
-
-Other useful links:
-
-- https://kubernetes.io/docs/concepts/
-- 
 
 
 ## Prerequisites 
 
-- docker installed 
-- kubernetes installed
+- Docker 
+- Kubernetes
 
 ## System Configuration at time of test 
 
@@ -63,3 +58,7 @@ To delete the docker image that was created
 `docker rmi {image_id}`
 
 ![docker-nginx-static-html-demo-cleanup-image](images/docker-nginx-static-html-demo-cleanup-image.png?raw=true "Terminal Docker Cleanup Screenshot")
+
+## Useful links
+
+- https://kubernetes.io/docs/concepts/
