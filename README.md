@@ -1,3 +1,6 @@
+| [◂ Previous](https://github.com/ameyrupji-k8s/docker-nginx-static-html-demo) |
+|-----|
+
 # k8s-docker-nginx-static-html-demo
 
 This repo contains the code for an static html demo page behind nginx deployed on local kubernetes cluster.
@@ -62,3 +65,6 @@ To delete the docker image that was created
 ## Useful links
 
 - https://kubernetes.io/docs/concepts/
+
+| [Next ▸](https://github.com/ameyrupji-k8s/) |
+|-----|
