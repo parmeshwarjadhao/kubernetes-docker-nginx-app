@@ -1,10 +1,100 @@
-<html>
-    <head>
-        <title>Docker Nginx Static HTML demo</title>
-    </head>
-    <body>
-        <h1>Docker Nginx Static HTML demo</h1>
-        <hr/>
-        <p>Hello world from docker container!</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Design Page</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #6B73FF, #000DFF);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #FF6B6B;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: #ff4757;
+            transform: scale(1.1);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Animated shapes in background */
+        .shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.4;
+            animation: float 6s infinite ease-in-out;
+        }
+
+        .shape1 { width: 100px; height: 100px; background: #FFD93D; top: 10%; left: 15%; animation-delay: 0s; }
+        .shape2 { width: 150px; height: 150px; background: #6BCB77; top: 70%; left: 70%; animation-delay: 2s; }
+        .shape3 { width: 80px; height: 80px; background: #4D96FF; top: 40%; left: 50%; animation-delay: 4s; }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0) translateX(0); }
+            50% { transform: translateY(-30px) translateX(20px); }
+        }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shape shape1"></div>
+    <div class="shape shape2"></div>
+    <div class="shape shape3"></div>
+
+    <h1>Welcome to My Special Page</h1>
+    <p>This is a beautifully designed HTML page with interactive buttons and animated background shapes. It is fully responsive and works on any device. Click the button below to explore more!</p>
+    <a href="#" class="button">Get Started</a>
+
+    <footer>
+        &copy; 2026 Your Name. All Rights Reserved.
+    </footer>
+
+</body>
 </html>
